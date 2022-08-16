@@ -1,0 +1,16 @@
+<form (ngSubmit)="fncreat()" method="post">
+
+<input type="text" name="f_name" id="" placeholder="fn" [(ngModel)]=" objectname.f_name">
+ <input type="text" name="l_name" id="" placeholder="ln" [(ngModel)]="objectname.l_name">
+<input type="text" name="dob" id="" placeholder="dob" [(ngModel)]="objectname.dob">
+<mat-radio-group aria-label="Select an option" [(ngModel)]="objectname.gender" name="gender">
+  
+    <mat-radio-button value="male">male</mat-radio-button  >
+      <mat-radio-button value="female">female</mat-radio-button>
+    
+  </mat-radio-group>
+  
+
+<input type="email" name="email" placeholder="email" id="" [(ngModel)]="objectname.email">
+<button >insert</button>
+</form>

@@ -1,0 +1,22 @@
+<table border="1" cellpadding='20px'> 
+<tr>
+<th>TITLE</th>
+<th>DESCRIPTION</th>
+<th>INGREDIENTS</th>
+<th>ID</th>
+
+</tr>
+
+<tr *ngFor="let item of cofee">
+<td>{{item['title']}}</td>
+<td>{{item['description']}}</td>
+<td>{{item['ingredients']}}</td>
+<td>{{item['id']}}</td>
+
+<td><button (click)="fndelete(item['id'])">delete</button></td>
+</tr>
+
+
+
+
+</table>
